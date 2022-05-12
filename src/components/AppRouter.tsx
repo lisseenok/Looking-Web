@@ -4,7 +4,7 @@ import {privateRoutes, publicRoutes} from "../routes";
 import {ADD_HOSTEL_ROUTE, LOGIN_ROUTE} from "../utils/const";
 
 const AppRouter = () => {
-    const user = true
+    const user = false
     return user ?
         (
             <Switch>
