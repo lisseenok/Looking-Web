@@ -15,7 +15,7 @@ import AdbIcon from '@mui/icons-material/Adb';
 import BedIcon from '@mui/icons-material/Bed';
 import {NavLink} from "react-router-dom";
 import {Grid, Link} from "@material-ui/core";
-import {LOGIN_ROUTE} from "../utils/const";
+import {HOME_ROUTE, LOGIN_ROUTE} from "../utils/const";
 
 const pages = ['About us', 'Add hostel'];
 const settings = ['Account', 'Logout'];
@@ -134,7 +134,9 @@ const Navbar = () => {
                     <Box>
                     <Grid container justify={"flex-end"}>
                         {user ?
-                            <Button variant={"outlined"}>Выйти</Button>
+                            <NavLink to={HOME_ROUTE}>
+                                <Button variant={"outlined"}>Выйти</Button>
+                            </NavLink>
                             :
                             <NavLink to={LOGIN_ROUTE}>
                                 <Button variant={"outlined"}>Войти</Button>
