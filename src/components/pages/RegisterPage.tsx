@@ -4,7 +4,7 @@ import Box from "@mui/material/Box";
 import {NavLink} from "react-router-dom";
 import {LOGIN_ROUTE} from "../../utils/const";
 
-const Register = () => {
+const RegisterPage = () => {
     return (
         <Container>
             <Grid container
@@ -24,4 +24,4 @@ const Register = () => {
     );
 };
 
-export default Register;
+export default RegisterPage;

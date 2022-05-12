@@ -1,11 +1,11 @@
 import React from 'react';
 
-const UserSlice = () => {
+const AddHostelPage = () => {
     return (
         <div>
-
+            AddHostel
         </div>
     );
 };
 
-export default UserSlice;
+export default AddHostelPage;

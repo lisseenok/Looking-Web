@@ -1,32 +1,32 @@
 import {ADD_HOSTEL_ROUTE, HOME_ROUTE, LOGIN_ROUTE, REGISTER_ROUTE} from "./utils/const";
-import Login from "./components/pages/Login";
-import AddHostel from "./components/pages/AddHostel";
-import Register from "./components/pages/Register";
-import Home from "./components/pages/Home";
+import LoginPage from "./components/pages/LoginPage";
+import AddHostelPage from "./components/pages/AddHostelPage";
+import RegisterPage from "./components/pages/RegisterPage";
+import HomePage from "./components/pages/HomePage";
 
 
 export const publicRoutes = [
     {
         path: LOGIN_ROUTE,
-        Component: Login
+        Component: LoginPage
     },
     {
         path: REGISTER_ROUTE,
-        Component: Register
+        Component: RegisterPage
     },
     {
         path: HOME_ROUTE,
-        Component: Home
+        Component: HomePage
     }
 ]
 
 export const privateRoutes = [
     {
         path: ADD_HOSTEL_ROUTE,
-        Component: AddHostel
+        Component: AddHostelPage
     },
     {
         path: HOME_ROUTE,
-        Component: Home
+        Component: HomePage
     }
 ]

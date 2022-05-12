@@ -4,7 +4,7 @@ import Box from "@mui/material/Box";
 import {LOGIN_ROUTE, REGISTER_ROUTE} from "../../utils/const";
 import {NavLink} from "react-router-dom";
 
-const Login = () => {
+const LoginPage = () => {
     return (
         <Container>
             <Grid container
@@ -14,7 +14,7 @@ const Login = () => {
             >
                 <Box p={5}>
                     <p>
-                        Нет аккаунта? <NavLink to={REGISTER_ROUTE}>Зарегестрируйтесь</NavLink>
+                        Нет аккаунта? <NavLink to={REGISTER_ROUTE}>Зарегистрируйтесь</NavLink>
                     </p>
 
                 </Box>
@@ -24,4 +24,4 @@ const Login = () => {
     );
 };
 
-export default Login;
+export default LoginPage;
