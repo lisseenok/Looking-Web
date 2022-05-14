@@ -6,6 +6,7 @@ import {configureStore} from "@reduxjs/toolkit";
 import './index.css';
 import App from './App';
 import userReducer from './slices/userSlice'
+import './firebase.js'
 
 export const store = configureStore({
     reducer: {
