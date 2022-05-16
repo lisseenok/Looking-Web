@@ -2,16 +2,16 @@ import React from 'react';
 import Form from "./Form";
 import {useDispatch} from "react-redux";
 import {setUser} from "../slices/userSlice";
-import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+import { getAuth, createUserWithEmailAndPassword } from "firebase/auth"
 import {useHistory} from "react-router-dom";
 import {HOME_ROUTE} from "../utils/const";
 
-const Login = () => {
+const Register = () => {
     const dispatch = useDispatch();
     const {push} = useHistory();
-    const handleLogin = (email: any, password: any) => {
+    const handleRegister = (email: any, password: any) => {
         const auth = getAuth();
-        signInWithEmailAndPassword(auth, email, password)
+        createUserWithEmailAndPassword(auth, email, password)
             .then(({user}) => {
                 dispatch(setUser({
                     email: user.email,
@@ -25,10 +25,10 @@ const Login = () => {
     }
     return (
         <Form
-            title="Войти"
-            handleClick={handleLogin}
+            title="Зарегистрироваться"
+            handleClick={handleRegister}
         />
     );
 };
 
-export default Login;
+export default Register;

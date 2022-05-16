@@ -1,9 +1,10 @@
 import React from 'react';
+import AddHostelForm from "../AddHostelForm";
 
 const AddHostelPage = () => {
     return (
         <div>
-            AddHostel
+            <AddHostelForm/>
         </div>
     );
 };
